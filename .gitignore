@@ -1,0 +1,35 @@
+﻿# Ambientes Virtuais (Nunca devem ir para o GitHub)
+.venv/
+venv/
+ENV/
+env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Dados Locais e Banco de Dados (Simulação de Lakehouse)
+data/raw/*
+data/delta_lake/*
+!data/raw/.gitkeep
+!data/delta_lake/.gitkeep
+*.db
+*.sqlite
+*.duckdb
+*.parquet
+*.csv
+*.json
+
+# IDEs e Sistema Operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Configurações sensíveis (Variáveis de ambiente)
+*.env
+config/settings.local.toml
